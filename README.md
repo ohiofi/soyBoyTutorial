@@ -66,6 +66,7 @@ Click **Apply** to commit the slice changes to your sprite. **Close** the Sprite
       Element 4: (X:-0.23, Y:0.195)
     ```
     * If you select SoyBoy in the Scene view, you should see a green collider edge around him.
+    
     ![SoyBoy with green collider edge](/pics/sb1.png)
 
 
@@ -111,6 +112,7 @@ Remember the higher in the stack, the lower it renders on the screen. For instan
     * Select buzzsaw and adjust the settings in the Sprite Renderer to use the Hazard Sorting Layer with an Ordering In Layer value of 1.
     * Select the single-clock and top-left-corner-small GameObjects and change the Sorting Layer to Foreground and Ordering In Layer to 0.
 2. Use the move tool to arrange the sprites in the Scene view so they overlap slightly, like below to check your ordering. Foreground sprites are on top, and the Hazard layer is farthest back.
+
 ![SoyBoy with buzzsaw behind him](/pics/sb2.png)
 
 
@@ -126,6 +128,7 @@ Remember the higher in the stack, the lower it renders on the screen. For instan
 1. Before we can test the scripts we are going to enter, we need a ground for SoyBoy to run on.
     * In the **Scene** view, make 7 clones of the **single-block** GameObjects prefab and set them next to each of the in a line. Make sure the **Transform Y position** is the same for all 8 single-blocks.
     * Place **SoyBoy** above the row of blocks.
+    
     ![SoyBoy above the row of blocks](/pics/sb3.png)
 2. In the **Project Browser** , right-click the **Scripts** folder and create a new **C# Script**. Name it **SoyBoyController**. Double-click it to open the script in your editor.
 3. At the top of the script, just above the **public class SoyBoyController** definition, add the following:
