@@ -37,13 +37,13 @@ Click **Apply** to commit the slice changes to your sprite. **Close** the Sprite
     ```c#
     if (cameraTarget != null)
     {
-        var newPos = Vector2.Lerp (transform.position, cameraTarget.position, Time.deltaTime * trackingSpeed);
-		var camPos = new Vector3 (newPos.x, newPos.y, -10f);
-		var v3 = camPos;
-		var clampX = Mathf.Clamp (v3.x, minX, maxX);
-		var clampY = Mathf.Clamp (v3.y, minY, maxY);
-		transform.position = new Vector3 (clampX, clampY, -10f);
-	}
+    	var newPos = Vector2.Lerp (transform.position, cameraTarget.position, Time.deltaTime * trackingSpeed);
+	var camPos = new Vector3 (newPos.x, newPos.y, -10f);
+	var v3 = camPos;
+	var clampX = Mathf.Clamp (v3.x, minX, maxX);
+	var clampY = Mathf.Clamp (v3.y, minY, maxY);
+	transform.position = new Vector3 (clampX, clampY, -10f);
+    }
     ```
     * Save the script and return to Unity.
 2. Select the **Main Camera** in the Hierarchy. Drag the **SoyBoy** GameObject onto the **camTarget** field on the **CameraLerpToTransform** script component, which is now attached to Main Camera.
