@@ -50,7 +50,7 @@ Click **Apply** to commit the slice changes to your sprite. **Close** the Sprite
 3. You&#39;ll also need to set the **minX** and **minY** values to -100, the **maxX** and **maxY** to 100, and the **Tracking Speed** to 2.5.
 4. Save and then run the game. Using the **Scene** view along with the move tool, move Soy Boy around and notice how smoothly the camera follows the sprite.
 
-##Adding 2D Physics
+## Adding 2D Physics
 
 1. Setting up the colliders: Select the **single-block** GameObject in your heirarchy. In the Inspector, click **Add Component** and choose **Rigidbody2D**. Enable **Is Kinematic** because Soy Boy won&#39;t need to move any terrain – the blocks will be locked in place (static) and will only be moved by its transform rather than the physics engine.
 2. Add a **Box Collider 2D** to the **single-block** GameObject.
