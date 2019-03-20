@@ -158,11 +158,11 @@ Remember the higher in the stack, the lower it renders on the screen. For instan
 	input.y = Input.GetAxis ("Jump");
 	if (input.x > 0f)
 	{
-		sr.flipX = false;
+        sr.flipX = false;
 	}
-	else if (input.x <0f)
+    else if (input.x <0f)
 	{
-		sr.flipX = true;
+        sr.flipX = true;
 	}
 	```
 7. Add the newly created script to the SoyBoy GameObject.
@@ -172,11 +172,11 @@ Remember the higher in the stack, the lower it renders on the screen. For instan
 	var xVelocity = 0f;
 	if (input.x == 0)
 	{
-		xVelocity = 0f;
+        xVelocity = 0f;
 	}
-	else
+    else
 	{
-		xVelocity = rb.velocity.x;
+        xVelocity = rb.velocity.x;
 	}
 	rb.AddForce (new Vector2 (((input.x * speed) - rb.velocity.x) * acceleration, 0));
 	rb.velocity = new Vector2 (xVelocity, rb.velocity.y);
