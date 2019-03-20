@@ -133,7 +133,7 @@ Remember the higher in the stack, the lower it renders on the screen. For instan
 2. In the **Project Browser** , right-click the **Scripts** folder and create a new **C# Script**. Name it **SoyBoyController**. Double-click it to open the script in your editor.
 3. At the top of the script, just above the **public class SoyBoyController** definition, add the following:
    ```c#
-    [RequireComponent(typeof(SpriteRenderer),typeof(Rigidbody2D,typeof(Animator))]
+    [RequireComponent(typeof(SpriteRenderer),typeof(Rigidbody2D),typeof(Animator))]
     ```
     This line ensures that the script only applies to GameObjects that have the minimum components required to work.
 
